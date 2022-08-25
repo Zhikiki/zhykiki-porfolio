@@ -5,6 +5,8 @@
 }
 
 body {
+  background-color: #101728;
+  color: white;
   margin: 60px auto;
   max-width: 800px;
 }
