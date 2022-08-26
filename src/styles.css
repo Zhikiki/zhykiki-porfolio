@@ -22,7 +22,6 @@
 /* Integrate google fonts */
 
 body {
-
   background-color: #101728;
   color: white;
   margin: 60px auto;
@@ -39,6 +38,7 @@ h2 {
 }
 h3 {
   font-size: 28px;
+  margin-bottom: 25px;
 }
 
 .navigation {
@@ -55,7 +55,7 @@ h3 {
 
 .contact-button {
   background: var(--accent-color);
-  color: white;
+  color: var(--primary-color);
 }
 .contact-button:hover {
   box-shadow: var(--box-shadow-center);
@@ -105,27 +105,37 @@ h3 {
   text-decoration: underline;
 }
 
-/* styling for 4K devises */
-@media (min-width: 1440px) {
-body {
-  max-width: 1300px;
-}
-}
+/* styling for laptop */
 @media (max-width: 1024px) {
-h1 {
-  font-size: 72px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 20px;
-}
-.avatar {
-  max-width: 380px;
-  height: auto;
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 17px;
+  }
+  .avatar {
+    max-width: 260px;
+  }
+  .navigation a {
+  font-size: 14px;
 }
 }
 
-
-
+/* styling for mobile and tablet */
+/* @media (max-width: 1024px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 17px;
+  }
+  .avatar {
+    max-width: 260px;
+  }
+} */
