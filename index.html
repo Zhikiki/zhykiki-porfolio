@@ -21,34 +21,76 @@
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-7 d-flex align-items-center">
-          <div class="avatar-info-container">
-            <h2>Front-end developer based in Germany</h2>
-            <h1>Ksenia Zhykina</h1>
-            <h3>
-              Energetic, hardworking and aspiring front-end developer from
-              Ukraine
-            </h3>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-7 d-flex align-items-center">
+            <div class="avatar-info-container">
+              <h2>Front-end developer based in Germany</h2>
+              <h1>Ksenia Zhykina</h1>
+              <h3>
+                Energetic, hardworking and aspiring front-end developer from
+                Ukraine
+              </h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-5 d-flex align-items-center">
+            <div class="avatar">
+              <img
+                src="/images/zhykiki-avatar.jpg"
+                alt="Zhykiki developer avatar"
+                class="img-fluid rounded-circle"
+              />
+            </div>
           </div>
         </div>
-        <div class="col-12 col-md-5 d-flex align-items-center">
-          <div class="avatar">
-            <img
-              src="/images/zhykiki-avatar.jpg"
-              alt="Zhykiki developer avatar"
-              class="img-fluid rounded-circle"
-            />
+        <div class="row text-center">
+          <div class="col navigation">
+            <a href="about.html#contacts" class="contact-button">Contact Me</a>
+            <a href="about.html" class="about-button">About Me</a>
           </div>
         </div>
       </div>
-      <div class="row text-center">
-        <div class="col navigation">
-          <a href="about.html#contacts" class="contact-button">Contact Me</a>
-          <a href="about.html" class="about-button">About Me</a>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 section-header">Check out my projects</div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-7 d-flex align-items-center">
+            <a
+              href="https://dynamic-sprite-b85c47.netlify.app/"
+              target="_blank"
+            >
+              <img
+                src="/images/weather-app.png"
+                alt=""
+                class="img-fluid project-image"
+            /></a>
+          </div>
+          <div class="col-md-5 ps-4 pe-0 d-flex align-items-center">
+            <div>
+              <h3 class="project-name">WEATHER APP</h3>
+              <p class="project-description">
+                The application created on the basis of
+                <span class="text-accent">Vanilla JavaScript</span>. Used
+                <span class="text-accent">HTML, CSS, Bootstrap</span> and
+                integrated <span class="text-accent">API</span> with real-time
+                weather data. The project provides information for any specific
+                city about the current weather and weekly weather forecasts. The
+                app is responsive and developed by
+                <span class="text-accent">Visual Studio</span>.
+              </p>
+              <a
+                href="https://dynamic-sprite-b85c47.netlify.app/"
+                class="btn project-button"
+                >Check it</a
+              >
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
