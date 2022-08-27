@@ -1,30 +1,27 @@
 :root {
   --primary-color: #101728;
   --accent-color: rgb(253, 92, 1);
-  --gradient-linear-left: linear-gradient(
-    13deg,
-    rgba(253, 92, 1, 1) 0%,
-    rgba(44, 17, 75, 1) 26%,
-    rgba(16, 23, 40, 1) 59%,
-    rgba(0, 0, 0, 1) 98%
-  );
-  --gradient-linear-right: linear-gradient(
-    353deg,
-    rgba(253, 92, 1, 1) 0%,
-    rgba(44, 17, 75, 1) 26%,
-    rgba(16, 23, 40, 1) 59%,
-    rgba(0, 0, 0, 1) 98%
-  );
+  --gradient-linear-left: linear-gradient(13deg,
+      rgba(253, 92, 1, 1) 0%,
+      rgba(44, 17, 75, 1) 26%,
+      rgba(16, 23, 40, 1) 59%,
+      rgba(0, 0, 0, 1) 98%);
+  --gradient-linear-right: linear-gradient(353deg,
+      rgba(253, 92, 1, 1) 0%,
+      rgba(44, 17, 75, 1) 26%,
+      rgba(16, 23, 40, 1) 59%,
+      rgba(0, 0, 0, 1) 98%);
   --box-shadow-left: -20px 13px 40px 2px rgba(253, 92, 1, 0.7);
   --box-shadow-right: 20px 13px 40px 2px rgba(253, 92, 1, 0.7);
   --box-shadow-center: 0px 10px 37px 5px rgba(253, 92, 1, 0.7);
 }
+
 /* Integrate google fonts */
 
 body {
   background-color: #101728;
   color: white;
-  margin: 60px auto;
+  margin: 60px auto 30px;
 }
 
 h1 {
@@ -32,10 +29,12 @@ h1 {
   margin-bottom: 30px;
   color: var(--accent-color);
 }
+
 h2 {
   font-size: 40px;
   margin-bottom: 20px;
 }
+
 h3 {
   font-size: 28px;
   margin-bottom: 25px;
@@ -46,6 +45,7 @@ h3 {
   justify-content: left;
   align-items: center;
 }
+
 .navigation a {
   font-size: 20px;
   margin: 10px 20px 20px 0;
@@ -60,6 +60,7 @@ h3 {
   color: var(--primary-color);
   border: 2px solid var(--accent-color);
 }
+
 .contact-button:hover {
   box-shadow: var(--box-shadow-center);
   color: white;
@@ -70,11 +71,13 @@ h3 {
   color: white;
   border: 3px solid var(--accent-color);
 }
+
 .about-button:hover {
   box-shadow: var(--box-shadow-center);
   border-color: white;
   color: white;
 }
+
 .avatar {
   margin: 0 auto;
   max-width: 420px;
@@ -84,18 +87,21 @@ h3 {
 .section-header {
   text-align: center;
 }
+
 hr {
   border-top: 10px double var(--accent-color);
   color: var(--accent-color);
   text-align: center;
   margin: 0px;
 }
+
 .project-image {
   width: 100%;
   max-width: 490px;
   border-radius: 45px;
   filter: grayscale(70%);
 }
+
 .project-image:hover {
   filter: none;
 }
@@ -103,6 +109,7 @@ hr {
 .project-description-wraper {
   padding-left: 24px;
 }
+
 .project-name {
   font-size: 26px;
   text-decoration: underline var(--accent-color);
@@ -110,14 +117,17 @@ hr {
   text-underline-offset: 6px;
   margin-bottom: 18px;
 }
+
 .project-description {
   font-size: 17px;
   margin-bottom: 18px;
 }
+
 .text-accent {
   color: var(--accent-color);
   font-weight: 700;
 }
+
 .project-button {
   color: white;
   font-size: 17px;
@@ -125,9 +135,40 @@ hr {
   border-radius: 30px;
   padding: 15px 20px;
 }
+
 .project-button:hover {
   box-shadow: var(--box-shadow-center);
 }
+
+.contacts {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-icon {
+  font-size: 35px;
+  margin: 0px 20px;
+  color: white;
+}
+
+.contact-icon:hover {
+  box-shadow: var(--box-shadow-center);
+}
+
+.signature {
+  font-size: 14px;
+  text-align: center;
+}
+.project-github {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.project-github:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
 .homepage-link {
   display: block;
   text-align: center;
@@ -138,6 +179,7 @@ hr {
   display: flex;
   margin: 30px 0;
 }
+
 .about-topics div {
   font-size: 18px;
   text-align: center;
@@ -154,72 +196,91 @@ hr {
   justify-content: center;
   text-decoration: none;
 }
+
 .email-link:hover {
   text-decoration: underline;
 }
+
 /* styling for 4K */
 @media (min-width: 1400px) {
   .project-image {
     max-width: 640px;
   }
+
   .project-name {
     font-size: 36px;
     margin-bottom: 25px;
   }
+
   .project-description {
     font-size: 24px;
     margin-bottom: 25px;
   }
+
   .project-button {
     font-size: 24px;
   }
+
   .navigation {
     margin-top: -25px;
   }
+
   .navigation a {
     width: 180px;
     font-size: 24px;
   }
 }
+
 /* styling for laptop */
 @media (max-width: 1024px) {
   h1 {
     font-size: 69px;
   }
+
   h2 {
     font-size: 30px;
   }
+
   h3 {
     font-size: 21px;
     margin-bottom: 19px;
   }
+
   .avatar {
     max-width: 320px;
   }
+
   .navigation {
     margin-bottom: -19px;
   }
+
   .navigation a {
     font-size: 17px;
   }
+
   .project-image {
     max-width: 400px;
   }
+
   .project-description-wraper {
     padding-left: 12px;
     padding-right: 12px;
   }
+
   .project-description {
     font-size: 16px;
   }
+
   .project-name {
     font-size: 13px;
     margin-bottom: 13px;
   }
+
   .project-description {
     font-size: 13px;
     margin-bottom: 13px;
   }
+
   .project-button {
     font-size: 13px;
   }
@@ -227,40 +288,56 @@ hr {
 
 /* styling for mobile and tablet */
 @media (max-width: 767px) {
+
   h1,
   h2,
   h3 {
     text-align: center;
     margin: 10px 0;
   }
+
   .avatar {
     margin-top: 10px;
   }
+
   .navigation {
     justify-content: center;
     margin-top: 20px;
   }
+
   .navigation a {
     display: block;
     margin: 0 auto;
   }
+
   .project-image {
     display: none;
     /* margin: 0 auto; */
   }
+
   .project-description-wraper {
-    margin-top: 15px
+    margin-top: 15px;
   }
+
   .project-name {
     margin-top: 0;
   }
+
   .project-description {
     text-align: center;
   }
+
   .project-button {
     display: block;
     width: 25%;
     min-width: 105px;
     margin: 10px auto 0;
   }
+    .contact-icon {
+      font-size: 25px;
+     
+    }
+    .signature {
+      font-size: 10px;
+    }
 }
