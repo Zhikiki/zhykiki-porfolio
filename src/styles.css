@@ -72,6 +72,7 @@ h3 {
 }
 .about-button:hover {
   box-shadow: var(--box-shadow-center);
+  border-color: white;
   color: white;
 }
 .avatar {
@@ -88,10 +89,11 @@ hr {
   color: var(--accent-color);
   text-align: center;
   margin-top: 0px;
+  margin-bottom: 60px;
 }
 .project-image {
   width: 100%;
-  /* max-width: 600px; */
+  max-width: 490px;
   border-radius: 45px;
   filter: grayscale(70%);
 }
@@ -99,14 +101,19 @@ hr {
   filter: none;
 }
 
+.project-description-wraper {
+  padding-left: 24px;
+}
 .project-name {
+  font-size: 26px;
   text-decoration: underline var(--accent-color);
   text-decoration-thickness: 7px;
   text-underline-offset: 6px;
+  margin-bottom: 18px;
 }
 .project-description {
-  font-size: 18px;
-  margin-bottom: 25px;
+  font-size: 17px;
+  margin-bottom: 18px;
 }
 .text-accent {
   color: var(--accent-color);
@@ -117,12 +124,14 @@ hr {
   width: 45%;
   margin: 0 auto; */
   color: white;
-  font-size: 20px;
+  font-size: 17px;
   border: 3px solid var(--accent-color);
   border-radius: 30px;
   padding: 15px 20px;
 }
-
+.project-button:hover {
+  box-shadow: var(--box-shadow-center);
+}
 .homepage-link {
   display: block;
   text-align: center;
@@ -154,11 +163,16 @@ hr {
 }
 /* styling for 4K */
 @media (min-width: 1400px) {
+  .project-image {
+    max-width: 640px;
+  }
   .project-name {
     font-size: 36px;
+    margin-bottom: 25px;
   }
   .project-description {
     font-size: 24px;
+    margin-bottom: 25px;
   }
   .project-button {
     font-size: 24px;
@@ -192,8 +206,26 @@ hr {
   .navigation a {
     font-size: 17px;
   }
+  .project-image {
+    max-width: 400px;
+  }
+  .project-description-wraper {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
   .project-description {
     font-size: 16px;
+  }
+  .project-name {
+    font-size: 13px;
+    margin-bottom: 13px;
+  }
+  .project-description {
+    font-size: 13px;
+    margin-bottom: 13px;
+  }
+  .project-button {
+    font-size: 13px;
   }
 }
 
@@ -216,9 +248,19 @@ hr {
     display: block;
     margin: 0 auto;
   }
+  .project-image {
+    display: block;
+    margin: 0 auto;
+  }
+  .project-description-wraper {
+    margin-top: 15px
+  }
+  .project-description {
+    text-align: center;
+  }
   .project-button {
     display: block;
     width: 25%;
-    margin: 0 auto;
+    margin: 10px auto;
   }
 }
