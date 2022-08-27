@@ -12,28 +12,43 @@
       rgba(44, 17, 75, 1) 26%,
       rgba(16, 23, 40, 1) 59%,
       rgba(0, 0, 0, 1) 98%);
-  --box-shadow-left: -20px 13px 40px 2px rgba(253, 92, 1, 0.7);
-  --box-shadow-right: 20px 13px 40px 2px rgba(253, 92, 1, 0.7);
-  --box-shadow-center: 0px 10px 37px 5px rgba(253, 92, 1, 0.7);
+  --box-shadow-left: -20px 13px 40px 2px var(--accent-color);
+  --box-shadow-right: 20px 13px 40px 2px var(--accent-color);
+  --box-shadow-center: 0px 10px 37px 5px var(--accent-color);
 }
 
 /* Integrate google fonts */
 
 body {
+  font-family: 'Montserrat', sans-serif;
   background-color: var(--primary-color);
   color: var(--font-color);
-  margin: 60px auto 30px;
+  margin: 0px auto 30px;
 }
-
+.navbar {
+  font-size: 22px;
+  height: 6rem;
+  background-color: #101728;
+  box-shadow: var(--box-shadow-center);
+}
+.navbar-brand {
+  font-size: 26px;
+  font-weight: 700;
+}
+header {
+  margin-top: 40px;
+}
 h1 {
   font-size: 92px;
+  font-weight: 600;
   margin-bottom: 30px;
   color: var(--accent-color);
 }
 
 h2 {
   font-size: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-top: 0px;
 }
 
 h3 {
@@ -53,7 +68,7 @@ h3 {
   border-radius: 30px;
   padding: 15px 20px;
   text-decoration: none;
-  width: 150px;
+  width: 190px;
 }
 
 .contact-button {
@@ -87,6 +102,7 @@ h3 {
 
 .section-header {
   text-align: center;
+  margin-top: 0px;
 }
 
 hr {
@@ -227,7 +243,7 @@ hr {
   }
 
   .navigation a {
-    width: 180px;
+    width: 190px;
     font-size: 24px;
   }
 }
@@ -294,8 +310,9 @@ hr {
   h2,
   h3 {
     text-align: center;
-    margin: 10px 0;
+
   }
+ 
 
   .avatar {
     margin-top: 10px;
