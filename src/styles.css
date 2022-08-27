@@ -36,7 +36,7 @@ body {
   font-weight: 700;
 }
 header {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 h1 {
   font-size: 92px;
@@ -250,6 +250,16 @@ hr {
 
 /* styling for laptop */
 @media (max-width: 1024px) {
+  .navbar {
+      font-size: 18px;
+      height: 5rem;
+
+    }
+  
+    .navbar-brand {
+      font-size: 22px;
+
+    }
   h1 {
     font-size: 69px;
   }
