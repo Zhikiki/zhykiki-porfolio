@@ -88,8 +88,7 @@ hr {
   border-top: 10px double var(--accent-color);
   color: var(--accent-color);
   text-align: center;
-  margin-top: 0px;
-  margin-bottom: 60px;
+  margin: 0px;
 }
 .project-image {
   width: 100%;
@@ -120,9 +119,6 @@ hr {
   font-weight: 700;
 }
 .project-button {
-  /* display: block;
-  width: 45%;
-  margin: 0 auto; */
   color: white;
   font-size: 17px;
   border: 3px solid var(--accent-color);
@@ -249,11 +245,14 @@ hr {
     margin: 0 auto;
   }
   .project-image {
-    display: block;
-    margin: 0 auto;
+    display: none;
+    /* margin: 0 auto; */
   }
   .project-description-wraper {
     margin-top: 15px
+  }
+  .project-name {
+    margin-top: 0;
   }
   .project-description {
     text-align: center;
@@ -261,6 +260,7 @@ hr {
   .project-button {
     display: block;
     width: 25%;
-    margin: 10px auto;
+    min-width: 105px;
+    margin: 10px auto 0;
   }
 }
