@@ -192,29 +192,15 @@ hr {
   text-decoration: underline;
 }
 
-.homepage-link {
-  display: block;
-  text-align: center;
-  color: var(--primary-color);
-}
-
-.about-topics {
-  display: flex;
-  margin: 30px 0;
-}
-
-.about-topics div {
+.about-paragraph {
   font-size: 18px;
-  text-align: center;
-  line-height: 1.5;
-  margin: 10px;
-  background: var(--secondary-color);
-  padding: 20px;
 }
+.certificate-image {
 
+}
 .email-link {
   font-size: 28px;
-  color: var(--primary-color);
+  color: var(--accent-color);
   display: flex;
   justify-content: center;
   text-decoration: none;
