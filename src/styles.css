@@ -25,19 +25,23 @@ body {
   color: var(--font-color);
   margin: 0px auto 30px;
 }
+
 .navbar {
   font-size: 22px;
   height: 6rem;
   background-color: #101728;
   box-shadow: var(--box-shadow-center);
 }
+
 .navbar-brand {
   font-size: 26px;
   font-weight: 700;
 }
+
 header {
   margin-top: 50px;
 }
+
 h1 {
   font-size: 92px;
   font-weight: 600;
@@ -177,10 +181,12 @@ hr {
   font-size: 14px;
   text-align: center;
 }
+
 .project-github {
   color: var(--accent-color);
   text-decoration: none;
 }
+
 .project-github:hover {
   color: var(--accent-color);
   text-decoration: underline;
@@ -251,15 +257,15 @@ hr {
 /* styling for laptop */
 @media (max-width: 1024px) {
   .navbar {
-      font-size: 18px;
-      height: 5rem;
+    font-size: 18px;
+    height: 5rem;
+  }
 
-    }
-  
-    .navbar-brand {
-      font-size: 22px;
+  .navbar-brand {
+    font-size: 22px;
 
-    }
+  }
+
   h1 {
     font-size: 69px;
   }
@@ -320,9 +326,7 @@ hr {
   h2,
   h3 {
     text-align: center;
-
   }
- 
 
   .avatar {
     margin-top: 10px;
@@ -361,11 +365,12 @@ hr {
     min-width: 105px;
     margin: 10px auto 0;
   }
-    .contact-icon {
-      font-size: 25px;
-     
-    }
-    .signature {
-      font-size: 10px;
-    }
+
+  .contact-icon {
+    font-size: 25px;
+  }
+
+  .signature {
+    font-size: 10px;
+  }
 }
