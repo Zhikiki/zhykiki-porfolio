@@ -111,7 +111,6 @@ hr {
 
 .project-image {
   width: 100%;
-  max-width: 490px;
   border-radius: 45px;
   filter: grayscale(70%);
 }
@@ -213,10 +212,6 @@ hr {
 
 /* styling for 4K */
 @media (min-width: 1400px) {
-  .project-image {
-    max-width: 640px;
-  }
-
   .project-name {
     font-size: 36px;
     margin-bottom: 25px;
@@ -339,11 +334,6 @@ hr {
   .navigation a {
     display: block;
     margin: 0 auto;
-  }
-
-  .project-image {
-    display: none;
-    /* margin: 0 auto; */
   }
 
   .project-description-wraper {
