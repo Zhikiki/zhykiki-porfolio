@@ -1,14 +1,14 @@
 :root {
   --primary-color: #101728;
-  --accent-color: rgb(253, 92, 1);
+  --accent-color: rgb(201, 68, 117);
   --font-color: white;
   --gradient-linear-left: linear-gradient(13deg,
-      rgba(253, 92, 1, 1) 0%,
+      rgba(201, 90, 131, 1) 0%,
       rgba(44, 17, 75, 1) 26%,
       rgba(16, 23, 40, 1) 59%,
       rgba(0, 0, 0, 1) 98%);
   --gradient-linear-right: linear-gradient(353deg,
-      rgba(253, 92, 1, 1) 0%,
+      rgba(201, 90, 131, 1) 0%,
       rgba(44, 17, 75, 1) 26%,
       rgba(16, 23, 40, 1) 59%,
       rgba(0, 0, 0, 1) 98%);
@@ -209,6 +209,11 @@ hr {
   color: var(--accent-color);
 }
 
+.skillset i {
+  display: block;
+  font-size: 48px;
+  color: var(--font-color);
+}
 
 /* styling for 4K */
 @media (min-width: 1400px) {
