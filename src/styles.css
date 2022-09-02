@@ -200,12 +200,12 @@ hr {
   text-decoration: underline;
 }
 
-.about-descrition h1 {
+.header-page h1 {
   color: var(--font-color);
   font-size: 66px;
 }
 
-.about-descrition h2 {
+.header-page h2 {
   color: var(--accent-color);
 }
 
@@ -252,7 +252,7 @@ hr {
     font-size: 61px;
   }
 
-  .about-descrition h1 {
+  .header-page h1 {
     font-size: 46px;
   }
 
@@ -260,7 +260,7 @@ hr {
     font-size: 29px;
   }
 
-  .about-descrition h2 {
+  .header-page h2 {
     font-size: 24px;
   }
 
