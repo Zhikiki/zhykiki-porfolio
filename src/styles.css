@@ -122,7 +122,8 @@ hr {
 .technology-plate {
   max-width: 90%;
   padding: 15px;
-  border: 2px solid var(--accent-color);
+  border: 2px solid var(--font-color);
+  border-radius: 15px;
   background: var(--accent-color);
   position: relative;
   top: -70px;
