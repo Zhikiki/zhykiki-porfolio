@@ -1,6 +1,6 @@
 :root {
   --primary-color: #101728;
-  --accent-color: rgb(201, 68, 117);
+  --accent-color: rgb(224, 75, 130);
   --font-color: white;
   --gradient-linear-left: linear-gradient(13deg,
       rgba(201, 90, 131, 1) 0%,
@@ -207,6 +207,9 @@ hr {
 
 .header-page h2 {
   color: var(--accent-color);
+}
+.contact-page-header i {
+  font-size: 40px;
 }
 
 .skillset i {
