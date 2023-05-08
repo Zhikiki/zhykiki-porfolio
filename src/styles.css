@@ -202,6 +202,17 @@ hr {
   text-align: center;
 }
 
+.impressum {
+  font-size: 14px;
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.impressum-link {
+
+  color: var(--accent-color);
+}
+
 .project-github {
   color: var(--accent-color);
   text-decoration: none;
