@@ -19,6 +19,9 @@
 
 /* Integrate google fonts */
 
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--primary-color);
@@ -95,6 +98,15 @@ h3 {
   box-shadow: var(--box-shadow-center);
   border-color: var(--font-color);
   color: var(--font-color);
+}
+
+
+.resume {
+  font-size: 22px;
+  margin: 10px 20px 20px 0;
+  border-radius: 30px;
+  padding: 15px 20px;
+  text-decoration: none;
 }
 
 .section-header {
@@ -184,12 +196,12 @@ hr {
 .contacts {
   margin: 30px auto;
   display: flex;
+  gap: 20px;
   justify-content: center;
 }
 
 .contact-icon {
   font-size: 35px;
-  margin: 0px 20px;
   color: var(--font-color);
 }
 
@@ -389,6 +401,7 @@ hr {
   .navigation {
     justify-content: center;
     margin-top: 20px;
+    gap: 5px;
   }
 
   .navigation a {
@@ -428,5 +441,27 @@ hr {
 
   .signature {
     font-size: 10px;
+  }
+}
+
+/* styling for super small device */
+@media (max-width: 360px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+
+  .navigation {
+    flex-direction: column;
+    gap: 8px;
   }
 }
