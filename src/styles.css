@@ -160,10 +160,10 @@ hr {
   margin-bottom: 18px;
 }
 
-.project-description {
+/* .project-description {
   font-size: 17px;
   margin-bottom: 18px;
-}
+} */
 
 .text-accent {
   color: var(--accent-color);
@@ -217,11 +217,11 @@ hr {
 }
 
 .case-study-modal {
-  margin: auto;
+  margin: 80px auto;
   display: inline-block;
   box-sizing: border-box;
   background: #fff;
-  padding: 20px;
+  padding: 20px 30px;
   width: 100%;
   max-width: 1100px;
   text-align: left;
@@ -230,7 +230,8 @@ hr {
 }
 
 .header-modal {
-  font-size: 26px;
+  font-size: 36px;
+  font-weight: 700;
   color: var(--primary-color);
   text-decoration: underline var(--accent-color);
   text-decoration-thickness: 7px;
@@ -239,13 +240,27 @@ hr {
   margin-bottom: 8px;
 }
 
+.subheader-modal {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.chapter-modal {
+  border-bottom: 5px solid var(--accent-color);
+  font-weight:600;
+}
+
 .modal-close {
-  float: right;
-  font-size: large;
+  text-align: right;
+  font-size: 30px;
   border: 0;
   background: none;
   color: var(--primary-color);
   text-decoration: underline;
+}
+
+.button-modal {
+  color: var(--primary-color);
 }
 
 .contacts {
@@ -392,9 +407,9 @@ hr {
   }
 
 
-  .navigation {
+  /* .navigation {
     margin-bottom: -19px;
-  }
+  } */
 
   .navigation a {
     font-size: 17px;
@@ -409,12 +424,12 @@ hr {
     padding-right: 12px;
   }
 
-  .project-description {
+  /* .project-description {
     font-size: 16px;
-  }
+  } */
 
   .project-name {
-    font-size: 13px;
+    font-size: 16px;
     margin-bottom: 13px;
   }
 
@@ -429,6 +444,22 @@ hr {
 
   .project-github-button {
     font-size: 13px;
+  }
+
+  .header-modal {
+    font-size: 26px;
+  }
+
+  .subheader-modal {
+    font-size: 22px;
+  }
+
+  .modal-close {
+    font-size: 22px;
+  }
+
+  .project-description-modal {
+    font-size: 16px;
   }
 }
 
@@ -496,6 +527,24 @@ hr {
 
   .signature {
     font-size: 10px;
+  }
+
+  .header-modal {
+    font-size: 22px;
+    text-align: left;
+    line-height: 150%;
+  }
+
+  .subheader-modal {
+    font-size: 16px;
+  }
+
+  .modal-close {
+    font-size: 16px;
+  }
+
+  .project-description-modal {
+    font-size: 13px;
   }
 }
 
