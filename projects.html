@@ -165,7 +165,11 @@
               first login then <span class="text-accent">JWT authentication</span> for further API calls.
               Project is deployed with <span class="text-accent">Herku</span>.
             </p>
+            <a href="https://zhikiki.github.io/myFlix-Angular-client/movies" class="btn project-button" target="_blank"
+              title="myFlix-client Angular developed by Ksenia Zhykina">Case study</a>
 
+            <a href="https://github.com/Zhikiki/movie-app" class="btn project-github-button" target="_blank"
+              title="myFlix app - Server Side developed by Ksenia Zhykina">GitHub</a>
             <div id='modal-container'>
               <div class='case-study-modal'>
                 <div class="row align-items-sm-start justify-content-between flex-column flex-sm-row-reverse">
@@ -245,7 +249,7 @@
                   <h3 class="chapter-modal subheader-modal text-center">Blueprint and Techstack</h3>
                   <div class="container case-study-tools">
                     <div class="row align-items-center mt-3">
-                      
+
                       <div class="col-4 col-sm-2 text-center">
                         <i class="fa-brands fa-css3-alt"></i>
                         <p>CSS3</p>
@@ -322,131 +326,189 @@
                     </div>
                   </div>
                 </div>
+                <div class="mt-5">
+                  <h3 class="chapter-modal subheader-modal text-center">Server side</h3>
+                  <p class="project-description project-description-modal">
+                    I created a RESTful API using Node.js and Express, that interacts with a non-relational database
+                    (MongoDB). The API can
+                    be accessed via commonly used HTTP methods like GET or POST. To retrieve and store data in the
+                    database, CRUD methods
+                    are used. The API provides movie information in JSON format.
+                  </p>
+                  <a href="https://myfliks-zhikiki.netlify.app/" class="btn project-button button-modal" target="_blank"
+                    title="myFlix-client developed by Ksenia Zhykina">Check on GitHub</a>
+                  <div class="container">
+                    <ol class="row steps-list server-process-description gap-3 justify-content-center mt-4">
+                      <li
+                        class="col-12 col-sm-5 project-description project-description-modal paragraph-modal mb-0 back-end-step">
+
+                        <p class="mb-0">As far as I was
+                          already
+                          familiar with JavaScript, I choose Node runtime environment for back-end development process.
+                          I
+                          used Express framework to simplify Node.js syntax and to create and maintain web servers as
+                          well
+                          as manage HTTP requests</p>
+                      </li>
+                      <li
+                        class="col-12 col-sm-5 project-description project-description-modal paragraph-modal mb-0  back-end-step">
+
+                        <p class="mb-0">After practicing with
+                          PostGreSQL relational database appeared too much restrictive. With idea of increasing
+                          flexibility
+                          to adapt to new requirements in the future, I choose NoSQL document database MongoDB and
+                          configured schema and models
+                          with Mongoose.
+                        </p>
+                      </li>
+                      <li
+                        class="col-12 col-sm-5 project-description project-description-modal paragraph-modal mb-0  back-end-step">
+
+                        <p class="mb-0">To ensure only logged
+                          in
+                          users can access the database, I implemented a login endpoint  with basic HTTP authentication
+                          returning an authorization JWT (token) to the client. For extra user’s security I added CORS
+                          password hashing and data
+                          validation.
+                        </p>
+                      </li>
+                      <li
+                        class="col-12 col-sm-5 project-description project-description-modal paragraph-modal  back-end-step">
+
+                        <p class="mb-0">At first, I felt like a
+                          blind developer, not being able to check the functionality of the created endpoints in the
+                          usual
+                          way. Using Postmen for testing the API has greatly simplified the task. I finally used Heroku
+                          to
+                          deploy my app and
+                          MongoDB Atlas to host my database.
+                        </p>
+                      </li>
+                    </ol>
+                  </div>
+
+                </div>
               </div>
             </div>
-            <a href="https://zhikiki.github.io/myFlix-Angular-client/movies" class="btn project-button" target="_blank"
-              title="myFlix-client Angular developed by Ksenia Zhykina">Case study</a>
-
-            <a href="https://github.com/Zhikiki/movie-app" class="btn project-github-button" target="_blank"
-              title="myFlix app - Server Side developed by Ksenia Zhykina">GitHub</a>
           </div>
         </div>
-      </div>
 
-      <div class="row flex-column flex-md-row-reverse mt-5 mt-md-5" id="Pokedox">
-        <div class="col-md-6 d-flex align-items-center justify-content-center ">
-          <a href="https://pokemon-js-app-zhikiki.netlify.app/" target="_blank"
-            title="Pokemon JS App developed by Ksenia Zhykina">
-            <img src="/images/pokemon-js-app.jpg" alt="Pokemon JS App developed by Ksenia Zhykina"
-              class="img-fluid project-image border border-white" /></a>
-        </div>
-        <div class="col-md-6 d-flex align-items-center justify-content-center project-description-wraper">
-          <div>
-            <h3 class="project-name">POKEDOX APP</h3>
-            <p class="project-description">
-              Simple web application with <span class="text-accent">HTML</span>, <span class="text-accent">CSS</span>,
-              and <span class="text-accent">JavaScript</span> that <span class="text-accent">fetches data from an
-                external API</span>, populate it
-              and displays in <span class="text-accent">DOM</span> (Pokemons cards). Each individual card contains a
-              button, which brings the user to
-              <span class="text-accent">modal</span> with detailed information. <span class="text-accent">Navbar</span>
-              has live <span class="text-accent">search/filter</span>. <span class="text-accent">Bootstrap 4.3.1</span>
-              is used for the user
-              interface elements.
-            </p>
-            <a href="https://pokemon-js-app-zhikiki.netlify.app/" class="btn project-button" target="_blank"
-              title="Pokemon JS App developed by Ksenia Zhykina">Demo</a>
-            <a href="https://github.com/Zhikiki/pokemon-js-app" class="btn project-github-button" target="_blank"
-              title="Pokemon JS App developed by Ksenia Zhykina GitHub">GitHub</a>
+        <div class="row flex-column flex-md-row-reverse mt-5 mt-md-5" id="Pokedox">
+          <div class="col-md-6 d-flex align-items-center justify-content-center ">
+            <a href="https://pokemon-js-app-zhikiki.netlify.app/" target="_blank"
+              title="Pokemon JS App developed by Ksenia Zhykina">
+              <img src="/images/pokemon-js-app.jpg" alt="Pokemon JS App developed by Ksenia Zhykina"
+                class="img-fluid project-image border border-white" /></a>
+          </div>
+          <div class="col-md-6 d-flex align-items-center justify-content-center project-description-wraper">
+            <div>
+              <h3 class="project-name">POKEDOX APP</h3>
+              <p class="project-description">
+                Simple web application with <span class="text-accent">HTML</span>, <span class="text-accent">CSS</span>,
+                and <span class="text-accent">JavaScript</span> that <span class="text-accent">fetches data from an
+                  external API</span>, populate it
+                and displays in <span class="text-accent">DOM</span> (Pokemons cards). Each individual card contains a
+                button, which brings the user to
+                <span class="text-accent">modal</span> with detailed information. <span
+                  class="text-accent">Navbar</span>
+                has live <span class="text-accent">search/filter</span>. <span class="text-accent">Bootstrap
+                  4.3.1</span>
+                is used for the user
+                interface elements.
+              </p>
+              <a href="https://pokemon-js-app-zhikiki.netlify.app/" class="btn project-button" target="_blank"
+                title="Pokemon JS App developed by Ksenia Zhykina">Demo</a>
+              <a href="https://github.com/Zhikiki/pokemon-js-app" class="btn project-github-button" target="_blank"
+                title="Pokemon JS App developed by Ksenia Zhykina GitHub">GitHub</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="row mt-5" id="weather-app">
-        <div class="col-md-6 d-flex align-items-center justify-content-center">
-          <a href="https://dynamic-sprite-b85c47.netlify.app/" target="_blank"
-            title="Weather app developed by Ksenia Zhykina">
-            <img src="/images/weather-app.png" alt="Weather app developed by Ksenia Zhykina"
-              class="img-fluid project-image" /></a>
-        </div>
-        <div class="col-md-6 d-flex align-items-center justify-content-center project-description-wraper">
-          <div>
-            <h3 class="project-name">WEATHER APP</h3>
-            <p class="project-description">
-              The application created on the basis of
-              <span class="text-accent">Vanilla JavaScript</span>. Used
-              <span class="text-accent">HTML, CSS, Bootstrap</span> and
-              integrated <span class="text-accent">API</span> with real-time
-              weather data. The project provides information for any specific
-              city about the current weather and weekly weather forecasts. The
-              app is responsive and developed by
-              <span class="text-accent">Visual Studio</span>.
-            </p>
-            <a href="https://dynamic-sprite-b85c47.netlify.app/" class="btn project-button" target="_blank"
-              title="Weather app developed by Ksenia Zhykina">Demo</a>
-            <a href="https://github.com/Zhikiki/vanila-weather-app" class="btn project-github-button" target="_blank"
-              title="Weather app developed by Ksenia Zhykina GitHub">GitHub</a>
+        <div class="row mt-5" id="weather-app">
+          <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <a href="https://dynamic-sprite-b85c47.netlify.app/" target="_blank"
+              title="Weather app developed by Ksenia Zhykina">
+              <img src="/images/weather-app.png" alt="Weather app developed by Ksenia Zhykina"
+                class="img-fluid project-image" /></a>
+          </div>
+          <div class="col-md-6 d-flex align-items-center justify-content-center project-description-wraper">
+            <div>
+              <h3 class="project-name">WEATHER APP</h3>
+              <p class="project-description">
+                The application created on the basis of
+                <span class="text-accent">Vanilla JavaScript</span>. Used
+                <span class="text-accent">HTML, CSS, Bootstrap</span> and
+                integrated <span class="text-accent">API</span> with real-time
+                weather data. The project provides information for any specific
+                city about the current weather and weekly weather forecasts. The
+                app is responsive and developed by
+                <span class="text-accent">Visual Studio</span>.
+              </p>
+              <a href="https://dynamic-sprite-b85c47.netlify.app/" class="btn project-button" target="_blank"
+                title="Weather app developed by Ksenia Zhykina">Demo</a>
+              <a href="https://github.com/Zhikiki/vanila-weather-app" class="btn project-github-button" target="_blank"
+                title="Weather app developed by Ksenia Zhykina GitHub">GitHub</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="row flex-column flex-md-row-reverse mt-5 mt-md-5" id="portfolio-project">
-        <div class="col-md-6 d-flex align-items-center justify-content-center">
-          <a href="https://incandescent-klepon-e49a89.netlify.app/" target="_blank"
-            title="Portfolio page developed by Ksenia Zhykina">
-            <img src="/images/portfolio-project.png" alt="Portfolio page developed by Ksenia Zhykina"
-              class="img-fluid project-image border border-white" /></a>
-        </div>
-        <div class="col-md-6 d-flex align-items-center justify-content-center project-description-wraper">
-          <div>
-            <h3 class="project-name">PORFOLIO PAGE</h3>
-            <p class="project-description">
-              First multi-page project created by using
-              <span class="text-accent">HTML</span>,
-              <span class="text-accent">CSS</span> and
-              <span class="text-accent">Bootstrap</span>. Features using in
-              this project include <span class="text-accent">GitHub</span>,
-              <span class="text-accent">Visual Studio</span> and
-              <span class="text-accent">Netlify</span>. Basics of
-              <span class="text-accent">SEO</span> are implemented The project
-              is fully responsive and displays well on all devices.
-            </p>
-            <a href="https://incandescent-klepon-e49a89.netlify.app/" class="btn project-button" target="_blank"
-              title="Portfolio page developed by Ksenia Zhykina">Demo</a>
-            <a href="https://github.com/Zhikiki/zhykiki-porfolio" class="btn project-github-button" target="_blank"
-              title="Portfolio page developed by Ksenia Zhykina GitHub">GitHub</a>
+        <div class="row flex-column flex-md-row-reverse mt-5 mt-md-5" id="portfolio-project">
+          <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <a href="https://incandescent-klepon-e49a89.netlify.app/" target="_blank"
+              title="Portfolio page developed by Ksenia Zhykina">
+              <img src="/images/portfolio-project.png" alt="Portfolio page developed by Ksenia Zhykina"
+                class="img-fluid project-image border border-white" /></a>
+          </div>
+          <div class="col-md-6 d-flex align-items-center justify-content-center project-description-wraper">
+            <div>
+              <h3 class="project-name">PORFOLIO PAGE</h3>
+              <p class="project-description">
+                First multi-page project created by using
+                <span class="text-accent">HTML</span>,
+                <span class="text-accent">CSS</span> and
+                <span class="text-accent">Bootstrap</span>. Features using in
+                this project include <span class="text-accent">GitHub</span>,
+                <span class="text-accent">Visual Studio</span> and
+                <span class="text-accent">Netlify</span>. Basics of
+                <span class="text-accent">SEO</span> are implemented The project
+                is fully responsive and displays well on all devices.
+              </p>
+              <a href="https://incandescent-klepon-e49a89.netlify.app/" class="btn project-button" target="_blank"
+                title="Portfolio page developed by Ksenia Zhykina">Demo</a>
+              <a href="https://github.com/Zhikiki/zhykiki-porfolio" class="btn project-github-button" target="_blank"
+                title="Portfolio page developed by Ksenia Zhykina GitHub">GitHub</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="row mt-5 mb- mb-md-5" id="mdn-product-page">
-        <div class="col-md-6 d-flex align-items-center justify-content-center">
-          <a href="https://tubular-piroshki-610861.netlify.app/" target="_blank"
-            title="MDN product page developed by Ksenia Zhykina">
-            <img src="/images/mdn-product-page.png" alt="MDN product page developed by Ksenia Zhykina"
-              class="img-fluid project-image" /></a>
-        </div>
-        <div class="col-md-6 d-flex align-items-center justify-content-center project-description-wraper">
-          <div>
-            <h3 class="project-name">MDN PRODUCT PAGE</h3>
-            <p class="project-description">
-              The very first project is a simple not responsive product page
-              designed with basic knowledge of
-              <span class="text-accent">HTML</span>,
-              <span class="text-accent">CSS</span> and
-              <span class="text-accent">JavaScript</span>. It's hosted by
-              <span class="text-accent">GitHub</span> and
-              <span class="text-accent">Netlify</span>. It can be used as a
-              basic page for product introduction and customer data
-              collection.
-            </p>
-            <a href="https://tubular-piroshki-610861.netlify.app/" class="btn project-button" target="_blank"
-              title="MDN product page developed by Ksenia Zhykina">Demo</a>
-            <a href="https://github.com/Zhikiki/basic_final-project" class="btn project-github-button" target="_blank"
-              title="MDN product page developed by Ksenia Zhykina GitHub">GitHub</a>
+        <div class="row mt-5 mb- mb-md-5" id="mdn-product-page">
+          <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <a href="https://tubular-piroshki-610861.netlify.app/" target="_blank"
+              title="MDN product page developed by Ksenia Zhykina">
+              <img src="/images/mdn-product-page.png" alt="MDN product page developed by Ksenia Zhykina"
+                class="img-fluid project-image" /></a>
+          </div>
+          <div class="col-md-6 d-flex align-items-center justify-content-center project-description-wraper">
+            <div>
+              <h3 class="project-name">MDN PRODUCT PAGE</h3>
+              <p class="project-description">
+                The very first project is a simple not responsive product page
+                designed with basic knowledge of
+                <span class="text-accent">HTML</span>,
+                <span class="text-accent">CSS</span> and
+                <span class="text-accent">JavaScript</span>. It's hosted by
+                <span class="text-accent">GitHub</span> and
+                <span class="text-accent">Netlify</span>. It can be used as a
+                basic page for product introduction and customer data
+                collection.
+              </p>
+              <a href="https://tubular-piroshki-610861.netlify.app/" class="btn project-button" target="_blank"
+                title="MDN product page developed by Ksenia Zhykina">Demo</a>
+              <a href="https://github.com/Zhikiki/basic_final-project" class="btn project-github-button" target="_blank"
+                title="MDN product page developed by Ksenia Zhykina GitHub">GitHub</a>
+            </div>
           </div>
         </div>
-      </div>
     </main>
     <footer>
       <hr />

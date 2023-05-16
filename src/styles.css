@@ -268,11 +268,69 @@ hr {
   color: var(--primary-color) !important;
   font-size: 43px;
 }
+
 .case-study-tools p {
   font-size: 18px;
 }
 
+.server-process-description>.paragraph-modal {
+  border: 2px solid var(--accent-color);
+  margin-bottom: 0;
+}
 
+.steps-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.back-end-step {
+  display: block;
+  clear: both;
+  counter-increment: list;
+  padding-bottom: 4rem;
+  font-size: 1.1rem;
+  line-height: 1.375;
+  position: relative;
+  padding: 10px;
+  border-top-left-radius: 30%
+}
+
+.back-end-step:before {
+  font-weight: 700;
+  font-size: 46px;
+  content: counter(list);
+  width: 6rem;
+  height: 6rem;
+  float: left;
+  position: relative;
+  top: -20px;
+  left: -16px;
+  margin: 4px;
+  color: var(--font-color);
+  background: var(--primary-color) linear-gradient(to bottom right, var(--primary-color) 25%, var(--accent-color));
+  text-shadow: 0 0 2px var(--primary-color);
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  shape-outside: ellipse();
+  z-index: 1;
+}
+
+.back-end-step:after {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  content: "";
+  background: var(--primary-color);
+  z-index: -1;
+  /* border-top-left-radius: 3px; */
+}
 
 .contacts {
   margin: 30px auto;
@@ -473,6 +531,10 @@ hr {
     font-size: 16px;
     margin-bottom: 15px;
   }
+
+  .button-modal {
+    font-size: 16px;
+  }
 }
 
 /* styling for mobile and tablet */
@@ -562,9 +624,15 @@ hr {
   .paragraph-modal {
     text-align: left;
   }
+
+  .button-modal {
+    font-size: 13px;
+  }
+
   .case-study-tools p {
     font-size: 13px;
   }
+
   .case-study-tools i {
     font-size: 36px;
   }
