@@ -304,7 +304,7 @@ hr {
   height: 6rem;
   float: left;
   position: relative;
-  top: -20px;
+  top: -16px;
   left: -16px;
   margin: 4px;
   color: var(--font-color);
@@ -535,6 +535,12 @@ hr {
   .button-modal {
     font-size: 16px;
   }
+
+  .back-end-step:before {
+    font-size: 32px;
+    width: 4rem;
+    height: 4rem;
+  }
 }
 
 /* styling for mobile and tablet */
@@ -635,6 +641,12 @@ hr {
 
   .case-study-tools i {
     font-size: 36px;
+  }
+
+  .back-end-step:before {
+    font-size: 26px;
+    width: 3rem;
+    height: 3rem;
   }
 }
 
