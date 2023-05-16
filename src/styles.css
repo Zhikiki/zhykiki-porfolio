@@ -176,10 +176,12 @@ hr {
   border: 3px solid var(--accent-color);
   border-radius: 30px;
   padding: 15px 20px;
+  font-weight: 700;
 }
 
 .project-button:hover {
   box-shadow: var(--box-shadow-center);
+  border-color: var(--primary-color)
 }
 
 .project-github-button {
@@ -330,6 +332,15 @@ hr {
   background: var(--primary-color);
   z-index: -1;
   /* border-top-left-radius: 3px; */
+}
+
+.client-side-container i {
+  font-size: 95px;
+  background-image: linear-gradient(to bottom right, var(--primary-color) 25%, var(--accent-color));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  color: transparent;
 }
 
 .contacts {
@@ -541,6 +552,10 @@ hr {
     width: 4rem;
     height: 4rem;
   }
+
+  .client-side-container i {
+    font-size: 60px;
+  }
 }
 
 /* styling for mobile and tablet */
@@ -647,6 +662,10 @@ hr {
     font-size: 26px;
     width: 3rem;
     height: 3rem;
+  }
+
+  .client-side-container i {
+    font-size: 56px;
   }
 }
 
