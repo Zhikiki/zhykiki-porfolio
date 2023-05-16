@@ -264,6 +264,16 @@ hr {
   width: fit-content !important;
 }
 
+.case-study-tools i {
+  color: var(--primary-color) !important;
+  font-size: 43px;
+}
+.case-study-tools p {
+  font-size: 18px;
+}
+
+
+
 .contacts {
   margin: 30px auto;
   display: flex;
@@ -548,8 +558,15 @@ hr {
   .project-description-modal {
     font-size: 13px;
   }
+
   .paragraph-modal {
     text-align: left;
+  }
+  .case-study-tools p {
+    font-size: 13px;
+  }
+  .case-study-tools i {
+    font-size: 36px;
   }
 }
 
