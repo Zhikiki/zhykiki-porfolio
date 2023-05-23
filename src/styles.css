@@ -211,7 +211,7 @@ hr {
   z-index: 999;
 
   /* to allow scrolling if the screen is not high enough*/
-  overflow: auto;
+  overflow: scroll;
 
   /* this is used to center the modal */
   display: grid !important;
@@ -219,7 +219,7 @@ hr {
 }
 
 .case-study-modal {
-  margin: 80px auto;
+  margin: 80px auto 0px;
   display: inline-block;
   box-sizing: border-box;
   background: #fff;
@@ -228,14 +228,26 @@ hr {
   max-width: 1100px;
   text-align: left;
   border-radius: 15px;
-  color: var(--primary-color)
+  color: var(--primary-color);
+  position: relative;
+}
+
+.button-up-container {
+  position: absolute;
+  right: 38px;
+  top: 600px;
+  width: 41px;
 }
 
 #btn-back-to-top {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  /* display: none; */
+  background: var(--primary-color) linear-gradient(to bottom right, var(--primary-color) 25%, var(--accent-color));
+  border: none;
+  border-radius: 10px;
+  color: var(--font-color);
+  padding: 8px 16px;
+  font-size: 22px;
+  display: none;
 }
 
 .header-modal {
@@ -264,8 +276,11 @@ hr {
   font-size: 30px;
   border: 0;
   background: none;
-  color: var(--primary-color);
-  text-decoration: underline;
+  color: var(--font-color);
+
+  background: var(--primary-color) linear-gradient(to bottom right, var(--primary-color) 25%, var(--accent-color));
+  border-radius: 20px;
+  padding: 5px 15px;
 }
 
 .button-modal {
