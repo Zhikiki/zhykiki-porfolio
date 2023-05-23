@@ -165,13 +165,16 @@
               first login then <span class="text-accent">JWT authentication</span> for further API calls.
               Project is deployed with <span class="text-accent">Herku</span>.
             </p>
-            <a href="https://zhikiki.github.io/myFlix-Angular-client/movies" class="btn project-button" target="_blank"
-              title="myFlix-client Angular developed by Ksenia Zhykina">Case study</a>
+            <a href="" class="btn project-button" id="show-modal-myFlix-case-study"
+              title="myFlix server-side developed by Ksenia Zhykina">Case study</a>
 
             <a href="https://github.com/Zhikiki/movie-app" class="btn project-github-button" target="_blank"
               title="myFlix app - Server Side developed by Ksenia Zhykina">GitHub</a>
-            <div id='modal-container'>
+            <div id='myFlix-react-case-study' class="d-none modal-container ">
               <div class='case-study-modal'>
+
+                <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top"><i
+                    class="fas fa-arrow-up"></i></button>
                 <div class="row align-items-sm-start justify-content-between flex-column flex-sm-row-reverse">
                   <div class="col-auto mr-auto mt-sm-0 text-end"><button class='modal-close'>Close</button></div>
                   <div class="col-auto mt-sm-0">
@@ -682,6 +685,7 @@
       </div>
     </footer>
   </div>
+  <script src="script/script.js"></script>
 </body>
 
 </html>
