@@ -1,6 +1,14 @@
-function showModalmyFlixCaseStudy() {
-  let modalContainer = document.querySelector('#myFlix-react-case-study');
-  modalContainer.classList.add('modal-container');
+function showModalmyFlixCaseStudy(targetProject) {
+  let projectTitle = targetProject.getAttribute('title');
+
+  let modalContainer;
+  if (projectTitle.includes('myFlix')) {
+    modalContainer = document.querySelector('#myFlix-react-case-study');
+    modalContainer.classList.add('modal-container');
+  } else {
+    console.log('Here will be case study for other project');
+  }
+  // Call close modal function when user tap on modal container
   modalContainer.addEventListener('click', (event) => {
     let target = event.target;
     if (target === modalContainer) {
@@ -9,29 +17,35 @@ function showModalmyFlixCaseStudy() {
   });
 }
 
-document
-  .querySelector('#show-modal-myFlix-case-study')
-  .addEventListener('click', (event) => {
+let showCaseStudyModalButtons = document.querySelectorAll(
+  'a.show-modal-case-stady'
+);
+showCaseStudyModalButtons.forEach((element) => {
+  element.addEventListener('click', (event) => {
+    let targetProject = event.target;
     event.preventDefault();
-    showModalmyFlixCaseStudy();
+    showModalmyFlixCaseStudy(targetProject);
   });
+});
 
+// Function closes modal with case study
 function closeModalCaseStudy() {
   let modalContainer = document.querySelector('.modal-container');
   modalContainer.classList.remove('modal-container');
 }
 
+// Call close modal function when user press 'Close' button in modal
 document.querySelector('.modal-close').addEventListener('click', () => {
   closeModalCaseStudy();
 });
 
+// Call close modal function when user press Esc button on keyboard
 window.addEventListener('keydown', (event) => {
   let modalContainer = document.querySelector('.modal-container');
   if (modalContainer && event.key === 'Escape') {
     closeModalCaseStudy();
   }
 });
-
 
 // Logic for get to top button
 let getToTopButton = document.getElementById('btn-back-to-top');
@@ -42,10 +56,7 @@ document
   .addEventListener('scroll', scrollFunction);
 
 function scrollFunction() {
-  console.log('modal scrolled');
-  if (
-    document.getElementById('myFlix-react-case-study').scrollTop > 50
-  ) {
+  if (document.getElementById('myFlix-react-case-study').scrollTop > 50) {
     getToTopButton.style.display = 'block';
   } else {
     getToTopButton.style.display = 'none';
