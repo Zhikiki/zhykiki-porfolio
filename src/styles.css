@@ -237,6 +237,7 @@ hr {
   right: 38px;
   top: 600px;
   width: 41px;
+  z-index: 999;
 }
 
 #btn-back-to-top {
